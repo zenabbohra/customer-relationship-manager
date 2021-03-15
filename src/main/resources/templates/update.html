@@ -24,6 +24,7 @@
     </header>
 </div>
 
+<!--Update an existing customer, so customer object is available-->
 <form th:action="@{/update/{id}(id=${customer.id})}"
       th:object="${customer}"
       method="post"

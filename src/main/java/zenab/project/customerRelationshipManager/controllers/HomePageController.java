@@ -14,7 +14,7 @@ public class HomePageController {
     @RequestMapping("/home.html")
     public String firstPage(Model model) {
         var customers = customerRepository.findAll();
-        // multiple owners found
+        // multiple customers found
         model.addAttribute("customers", customers);
         return "home";
     }

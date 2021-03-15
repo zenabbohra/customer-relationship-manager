@@ -47,6 +47,7 @@
             <td th:text="${customer.lastName}"/>
             <td th:text="${customer.email}"/>
             <td>
+<!--                link tags by default call Get method type-->
                 <a th:href="@{/update/{id}(id=${customer.id})}"
                    class="w3-btn w3-bar-item w3-text-teal w3-border-right">Update</a>
                 <a th:href="@{/delete/{id}(id=${customer.id})}"
